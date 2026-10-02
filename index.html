@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SharePlate Foundation – Rescue Food. Feed People.</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fffaf3;--card:#ffffff;--text:#2a2118;--muted:#6b5d4f;--accent:#e8590c;--accent2:#2f7d4f;--line:#eadfce}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1511;--card:#251e18;--text:#f4ece1;--muted:#b9aa98;--accent:#ff8a4c;--accent2:#5fbf86;--line:#3a3128}}
+:root[data-theme="dark"]{--bg:#1a1511;--card:#251e18;--text:#f4ece1;--muted:#b9aa98;--accent:#ff8a4c;--accent2:#5fbf86;--line:#3a3128}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
+h1,h2,h3,nav,.btn,.num{font-family:'Trebuchet MS',Verdana,sans-serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{max-width:1000px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;flex-wrap:wrap;gap:8px}
+.logo{font-weight:700;font-size:1.2rem;color:var(--accent);text-decoration:none}
+nav div a{margin-left:16px;color:var(--text);text-decoration:none;font-size:.95rem}
+nav div a:hover{color:var(--accent)}
+section{max-width:1000px;margin:auto;padding:56px 20px}
+.hero{text-align:center;padding-top:80px}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);margin:0 0 12px;line-height:1.15}
+.hero h1 span{color:var(--accent)}
+.hero p{max-width:600px;margin:0 auto 24px;color:var(--muted);font-size:1.1rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:700;border:0;cursor:pointer;font-size:1rem}
+.btn.alt{background:transparent;color:var(--accent);border:2px solid var(--accent);margin-left:8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-top:48px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.num{font-size:2rem;font-weight:700;color:var(--accent2)}
+h2{font-size:1.9rem;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:6px 0;color:var(--accent2)}
+.card .ic{font-size:2rem}
+.about{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;align-items:center}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;padding:10px 0 10px 48px;position:relative;border-bottom:1px dashed var(--line)}
+.steps li::before{content:counter(s);position:absolute;left:0;top:8px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;line-height:32px;font-family:sans-serif;font-weight:700}
+form{display:grid;gap:12px;max-width:520px}
+input,textarea{padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;width:100%}
+#msg{color:var(--accent2);font-weight:700;min-height:1.4em}
+footer{text-align:center;padding:28px 20px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<header><nav>
+<a class="logo" href="#home">🍲 SharePlate</a>
+<div><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+</nav></header>
+
+<section id="home" class="hero">
+<h1>Rescue surplus food.<br><span>Feed people, not landfills.</span></h1>
+<p>SharePlate Foundation connects canteens, restaurants and events with local communities in need — so good food reaches hungry people on time.</p>
+<a class="btn" href="#contact">Get Involved</a><a class="btn alt" href="#services">Our Services</a>
+<div class="stats">
+<div class="stat"><div class="num">25,000+</div>Meals redirected</div>
+<div class="stat"><div class="num">120</div>Partner donors</div>
+<div class="stat"><div class="num">350</div>Volunteers</div>
+<div class="stat"><div class="num">18</div>Communities served</div>
+</div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p class="sub">A volunteer-led NGO tackling hunger and food waste together.</p>
+<div class="about">
+<div>
+<p>Every day, tonnes of edible food are thrown away while families go hungry. SharePlate Foundation was started by students and volunteers to close that gap with simple coordination and technology.</p>
+<p><b>Mission:</b> make sure no surplus meal goes to waste when someone nearby needs it.<br><b>Vision:</b> a zero-hunger, zero-waste community.</p>
+</div>
+<div class="card"><h3>How it works</h3>
+<ol class="steps"><li>Donor posts surplus food details</li><li>Nearby volunteers get notified</li><li>Food is collected safely</li><li>Meals are delivered to communities</li></ol></div>
+</div>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<p class="sub">What we do, every day.</p>
+<div class="grid">
+<div class="card"><div class="ic">🚚</div><h3>Food Rescue &amp; Pickup</h3><p>Volunteers collect surplus food from canteens, hotels and events within hours.</p></div>
+<div class="card"><div class="ic">🍛</div><h3>Community Meals</h3><p>Weekly meal drives and shelters serving children, elders and daily-wage families.</p></div>
+<div class="card"><div class="ic">📱</div><h3>Donor Alerts</h3><p>Simple notifications that tell partners when and where food is needed.</p></div>
+<div class="card"><div class="ic">🎓</div><h3>Awareness Workshops</h3><p>Sessions in schools and colleges on reducing food waste at source.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact &amp; Volunteer</h2>
+<p class="sub">Donate food, volunteer, or partner with us.</p>
+<form id="f">
+<input required placeholder="Your name">
+<input required type="email" placeholder="Email">
+<textarea required rows="4" placeholder="How would you like to help?"></textarea>
+<button class="btn" type="submit">Send Message</button>
+<div id="msg"></div>
+</form>
+</section>
+
+<footer>© 2026 SharePlate Foundation · Demo website created with AI for the InAmigos Foundation task</footer>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();document.getElementById('msg').textContent='Thank you! We will contact you soon.';this.reset();});
+</script>
+</body>
+</html>
